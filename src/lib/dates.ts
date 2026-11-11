@@ -39,3 +39,5 @@ export function startOfDay(d: Date) {
 }
 
 export const pad2 = (n: number) => String(n).padStart(2, '0');
+
+export const formatTime = (t: { h: number; m: number }) => `${pad2(t.h)}:${pad2(t.m)}`;

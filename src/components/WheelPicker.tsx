@@ -11,10 +11,10 @@ import Animated, {
 } from 'react-native-reanimated';
 
 import { pad2 } from '@/lib/dates';
-import { colors, radius, space } from '@/theme/tokens';
+import { colors, radius } from '@/theme/tokens';
 
-const ITEM_H = 38;
-const VISIBLE = 5; // must be odd
+export const ITEM_H = 44;
+export const VISIBLE = 5; // must be odd
 const PAD = ITEM_H * Math.floor(VISIBLE / 2);
 
 type ColumnProps = {
@@ -135,15 +135,13 @@ export function TimeWheel({
   value,
   onChange,
   label,
-  invalid,
 }: {
   value: Time;
   onChange: (t: Time) => void;
   label: string;
-  invalid?: boolean;
 }) {
   return (
-    <View style={[styles.card, invalid && { borderColor: colors.danger }]}>
+    <View style={styles.card}>
       <View pointerEvents="none" style={styles.band} />
       <WheelColumn
         values={HOURS}
@@ -170,17 +168,12 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'center',
-    borderRadius: radius.lg,
-    borderWidth: 1,
-    borderColor: colors.border,
-    backgroundColor: colors.surface,
     overflow: 'hidden',
-    paddingHorizontal: space.sm,
   },
   band: {
     position: 'absolute',
-    left: space.sm,
-    right: space.sm,
+    left: 0,
+    right: 0,
     top: PAD,
     height: ITEM_H,
     borderRadius: radius.sm,
@@ -188,13 +181,13 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     borderColor: colors.indigoBorder,
   },
-  column: { width: 52, height: ITEM_H * VISIBLE },
+  column: { width: 84, height: ITEM_H * VISIBLE },
   row: { height: ITEM_H, alignItems: 'center', justifyContent: 'center' },
   rowText: {
-    fontSize: 22,
+    fontSize: 28,
     fontWeight: '600',
     color: colors.text,
     fontVariant: ['tabular-nums'],
   },
-  colon: { fontSize: 22, fontWeight: '700', color: colors.indigoBright, marginTop: -3 },
+  colon: { fontSize: 28, fontWeight: '700', color: colors.indigoBright, marginTop: -3 },
 });

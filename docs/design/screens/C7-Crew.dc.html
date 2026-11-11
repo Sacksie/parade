@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>New parade: crew and roles</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&amp;family=Geist+Mono:wght@500;600&amp;display=swap">
+<style>
+body{margin:0;background:#0B0B10}
+button,a{transition:transform 160ms cubic-bezier(0.23,1,0.32,1)}
+button{font:inherit;cursor:pointer}
+button:active,a:active{transform:scale(0.97)}
+a{color:#6FF5BE}a:hover{color:#A6FAD6}
+</style>
+</helmet>
+<div style="width: 390px; height: 844px; box-sizing: border-box; padding: 24px 20px 28px; display: flex; flex-direction: column; gap: 14px; background: #0B0B10; font-family: 'Geist', system-ui, sans-serif; color: #F3F3F8; overflow: hidden">
+
+<div style="display: flex; flex-direction: column; gap: 14px">
+<div style="display: flex; align-items: center; margin: 0 -8px">
+<a href="C6-Music.dc.html" aria-label="Back" style="width: 44px; height: 44px; display: flex; align-items: center; justify-content: center; border-radius: 14px; color: #F3F3F8">
+<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 6l-6 6 6 6"></path></svg>
+</a>
+</div>
+<div style="display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 4px" aria-hidden="true">
+<div style="height: 3px; border-radius: 99px; background: #5EF2B5"></div>
+<div style="height: 3px; border-radius: 99px; background: #5EF2B5"></div>
+<div style="height: 3px; border-radius: 99px; background: #5EF2B5"></div>
+<div style="height: 3px; border-radius: 99px; background: #5EF2B5"></div>
+<div style="height: 3px; border-radius: 99px; background: #5EF2B5"></div>
+<div style="height: 3px; border-radius: 99px; background: #23233A"></div>
+</div>
+<div style="display: flex; flex-direction: column; gap: 4px">
+<span style="font-size: 13px; color: #8C8CA4">Step <span style="font-family: 'Geist Mono', ui-monospace, monospace">5</span> of 6</span>
+<h1 style="margin: 0; font-size: 28px; font-weight: 700; letter-spacing: -0.025em">Crew &amp; roles</h1>
+</div>
+</div>
+
+<fieldset style="margin: 0; padding: 0; border: 0">
+<legend style="padding: 0; margin-bottom: 8px; font-size: 14px; font-weight: 500; color: #A7A7BC">Where will you be on the night?</legend>
+<div style="display: flex; flex-direction: column; border-radius: 16px; background: #14141C; border: 1px solid #23233A">
+<label style="display: flex; align-items: center; gap: 12px; min-height: 50px; padding: 0 14px; border-bottom: 1px solid #1E1E2E">
+<input type="radio" name="me" checked="checked" style="width: 20px; height: 20px; margin: 0; accent-color: #5EF2B5">
+<span style="font-size: 15px">Passenger in the lead car</span>
+</label>
+<label style="display: flex; align-items: center; gap: 12px; min-height: 50px; padding: 0 14px; border-bottom: 1px solid #1E1E2E">
+<input type="radio" name="me" style="width: 20px; height: 20px; margin: 0; accent-color: #5EF2B5">
+<span style="font-size: 15px">Driving a car</span>
+</label>
+<label style="display: flex; align-items: center; gap: 12px; min-height: 50px; padding: 0 14px">
+<input type="radio" name="me" style="width: 20px; height: 20px; margin: 0; accent-color: #5EF2B5">
+<span style="font-size: 15px">Not in the parade — running it from base</span>
+</label>
+</div>
+</fieldset>
+
+<div style="display: flex; flex-direction: column; gap: 8px">
+<span style="font-size: 14px; font-weight: 500; color: #A7A7BC">Roles</span>
+<ul style="margin: 0; padding: 0; list-style: none; border-radius: 16px; background: #14141C; border: 1px solid #23233A">
+<li style="display: flex; align-items: center; gap: 12px; min-height: 64px; padding: 0 8px 0 12px; border-bottom: 1px solid #1E1E2E">
+<span style="width: 36px; height: 36px; flex-shrink: 0; border-radius: 11px; background: #1A1736; color: #B0A6FF; font-size: 14px; font-weight: 700; display: flex; align-items: center; justify-content: center">L</span>
+<span style="flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 2px">
+<span style="font-size: 15px; font-weight: 600">Lead car</span>
+<span style="font-size: 13px; color: #A7A7BC">Your car · sets the pace</span>
+</span>
+<button type="button" style="height: 44px; padding: 0 12px; border-radius: 12px; background: transparent; border: 0; color: #6FF5BE; font-size: 14px; font-weight: 500">Change</button>
+</li>
+<li style="display: flex; align-items: center; gap: 12px; min-height: 64px; padding: 0 8px 0 12px; border-bottom: 1px solid #1E1E2E">
+<span style="width: 36px; height: 36px; flex-shrink: 0; border-radius: 11px; background: #1A1736; color: #B0A6FF; font-size: 14px; font-weight: 700; display: flex; align-items: center; justify-content: center">T</span>
+<span style="flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 2px">
+<span style="font-size: 15px; font-weight: 600">Tail car</span>
+<span style="font-size: 13px; color: #A7A7BC">Last car · helps anyone who stops</span>
+</span>
+<button type="button" style="height: 44px; padding: 0 12px; border-radius: 12px; background: #1C1C27; border: 1px solid #2F2F4A; color: #F3F3F8; font-size: 14px; font-weight: 500">Invite</button>
+</li>
+<li style="display: flex; align-items: center; gap: 12px; min-height: 64px; padding: 0 8px 0 12px">
+<span style="width: 36px; height: 36px; flex-shrink: 0; border-radius: 11px; background: #1A1736; color: #B0A6FF; font-size: 14px; font-weight: 700; display: flex; align-items: center; justify-content: center">C</span>
+<span style="flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 2px">
+<span style="font-size: 15px; font-weight: 600">Co-organisers</span>
+<span style="font-size: 13px; color: #A7A7BC">Dovid K. · can announce, run music, edit</span>
+</span>
+<button type="button" style="height: 44px; padding: 0 12px; border-radius: 12px; background: #1C1C27; border: 1px solid #2F2F4A; color: #F3F3F8; font-size: 14px; font-weight: 500">Invite</button>
+</li>
+</ul>
+</div>
+
+<div style="display: flex; gap: 10px; align-items: flex-start; padding: 12px 14px; border-radius: 14px; border: 1px solid #23233A; font-size: 13px; line-height: 1.45; color: #A7A7BC">
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#B0A6FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink: 0; margin-top: 1px"><circle cx="12" cy="12" r="9"></circle><path d="M12 11v5"></path><path d="M12 8v.01"></path></svg>
+<span>Invites are private links. Whoever opens one joins in that role. You can swap the lead or tail car on the night from any car's sheet.</span>
+</div>
+
+<div style="flex: 1"></div>
+
+<a href="C8-Publish.dc.html" style="height: 58px; display: flex; align-items: center; justify-content: center; border-radius: 18px; background: #5EF2B5; color: #04150E; font-size: 17px; font-weight: 600; text-decoration: none; flex-shrink: 0">Continue</a>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+renderVals() {
+return {};
+}
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Car sheet</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&amp;family=Geist+Mono:wght@500;600&amp;display=swap">
+<style>
+body{margin:0;background:#0B0B10}
+button,a{transition:transform 160ms cubic-bezier(0.23,1,0.32,1)}
+button{font:inherit;cursor:pointer}
+button:active,a:active{transform:scale(0.97)}
+a{color:#6FF5BE}a:hover{color:#A6FAD6}
+</style>
+</helmet>
+<div style="width: 390px; height: 844px; position: relative; overflow: hidden; background: #0B0B10; font-family: 'Geist', system-ui, sans-serif; color: #F3F3F8">
+
+<div style="position: absolute; left: 0; top: 0; right: 0; padding: 20px; display: flex; flex-direction: column; gap: 12px; opacity: 0.35" aria-hidden="true">
+<span style="font-size: 20px; font-weight: 700">Chanukah Car Parade</span>
+<span style="height: 150px; border-radius: 20px; background: #14141C; border: 1px solid #23233A"></span>
+<span style="height: 116px; border-radius: 18px; background: #14141C; border: 1px solid #23233A"></span>
+</div>
+<div style="position: absolute; inset: 0; background: rgba(5, 5, 8, 0.6)"></div>
+
+<div style="position: absolute; left: 0; right: 0; bottom: 0; box-sizing: border-box; padding: 10px 20px 26px; background: #121219; border-top: 1px solid #23233A; border-radius: 28px 28px 0 0; display: flex; flex-direction: column; gap: 16px" role="dialog" aria-labelledby="car-title">
+<div style="align-self: center; width: 40px; height: 5px; border-radius: 99px; background: #2F2F4A" aria-hidden="true"></div>
+
+<div style="display: flex; align-items: flex-start; gap: 14px">
+<span style="width: 52px; height: 52px; flex-shrink: 0; border-radius: 16px; background: #1A1736; color: #B0A6FF; font-family: 'Geist Mono', ui-monospace, monospace; font-size: 18px; font-weight: 600; display: flex; align-items: center; justify-content: center">07</span>
+<div style="flex: 1; display: flex; flex-direction: column; gap: 6px">
+<h2 id="car-title" style="margin: 0; font-size: 22px; font-weight: 700; letter-spacing: -0.02em">The Cohen family</h2>
+<div style="display: flex; flex-wrap: wrap; gap: 6px">
+<span style="padding: 4px 9px; border-radius: 999px; background: #0E241C; border: 1px solid #1E5A43; font-size: 12px; color: #6FF5BE">Here · <span style="font-family: 'Geist Mono', ui-monospace, monospace">17:19</span></span>
+<span style="padding: 4px 9px; border-radius: 999px; background: #0E241C; border: 1px solid #1E5A43; font-size: 12px; color: #6FF5BE">Music saved</span>
+<span style="padding: 4px 9px; border-radius: 999px; background: #261F0F; border: 1px solid #574619; font-size: 12px; color: #FFCB6B">No sound</span>
+</div>
+</div>
+</div>
+
+<div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px">
+<a href="tel:07700900000" style="height: 52px; display: flex; align-items: center; justify-content: center; gap: 8px; border-radius: 16px; background: #1C1C27; border: 1px solid #2F2F4A; color: #F3F3F8; font-size: 15px; font-weight: 500; text-decoration: none">
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"></path></svg>
+Call</a>
+<button type="button" style="height: 52px; display: flex; align-items: center; justify-content: center; gap: 8px; border-radius: 16px; background: #1C1C27; border: 1px solid #2F2F4A; color: #F3F3F8; font-size: 15px; font-weight: 500">
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10v4h3l9 5V5L7 10H4z"></path></svg>
+Message car</button>
+</div>
+
+<div style="display: flex; flex-direction: column; gap: 8px">
+<span style="font-size: 13px; font-weight: 600; letter-spacing: 0.04em; color: #8C8CA4">ROLE</span>
+<ul style="margin: 0; padding: 0; list-style: none; border-radius: 18px; background: #14141C; border: 1px solid #23233A">
+<li style="border-bottom: 1px solid #1E1E2E">
+<button type="button" style="width: 100%; min-height: 60px; display: flex; align-items: center; gap: 12px; padding: 0 14px; background: transparent; border: 0; color: #F3F3F8; text-align: left">
+<span style="width: 30px; height: 30px; flex-shrink: 0; border-radius: 9px; background: #1A1736; color: #B0A6FF; font-size: 12px; font-weight: 700; display: flex; align-items: center; justify-content: center">L</span>
+<span style="flex: 1; display: flex; flex-direction: column; gap: 1px"><span style="font-size: 15px">Make lead car</span><span style="font-size: 13px; color: #8C8CA4">Your car becomes a regular car</span></span>
+</button>
+</li>
+<li style="border-bottom: 1px solid #1E1E2E">
+<button type="button" style="width: 100%; min-height: 60px; display: flex; align-items: center; gap: 12px; padding: 0 14px; background: transparent; border: 0; color: #F3F3F8; text-align: left">
+<span style="width: 30px; height: 30px; flex-shrink: 0; border-radius: 9px; background: #1A1736; color: #B0A6FF; font-size: 12px; font-weight: 700; display: flex; align-items: center; justify-content: center">T</span>
+<span style="flex: 1; display: flex; flex-direction: column; gap: 1px"><span style="font-size: 15px">Make tail car</span><span style="font-size: 13px; color: #8C8CA4">They'll be asked to join at the back</span></span>
+</button>
+</li>
+<li>
+<button type="button" style="width: 100%; min-height: 60px; display: flex; align-items: center; gap: 12px; padding: 0 14px; background: transparent; border: 0; color: #F3F3F8; text-align: left">
+<span style="width: 30px; height: 30px; flex-shrink: 0; border-radius: 9px; background: #1A1736; color: #B0A6FF; font-size: 12px; font-weight: 700; display: flex; align-items: center; justify-content: center">C</span>
+<span style="flex: 1; display: flex; flex-direction: column; gap: 1px"><span style="font-size: 15px">Give organiser access</span><span style="font-size: 13px; color: #8C8CA4">Announce, run music, see help requests</span></span>
+</button>
+</li>
+</ul>
+</div>
+
+<button type="button" style="min-height: 48px; background: transparent; border: 0; color: #FF8A94; font-size: 15px; font-weight: 500">Remove from parade</button>
+</div>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+renderVals() {
+return {};
+}
+}
+</script>
+</body>
+</html>

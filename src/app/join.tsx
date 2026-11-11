@@ -1,80 +1,64 @@
-import { router } from 'expo-router';
 import { useState } from 'react';
-import { StyleSheet, Text, TextInput, View } from 'react-native';
-import { useSafeAreaInsets } from 'react-native-safe-area-context';
+import { StyleSheet, Text, View } from 'react-native';
 
-import { CloseIcon } from '@/components/icons';
-import { PressableScale } from '@/components/PressableScale';
-import { colors, radius, space, type } from '@/theme/tokens';
+import { Button, Header, Screen, TextField, goReplace } from '@/components/ui';
+import { findParadeByCode } from '@/store/selectors';
+import { getState } from '@/store/store';
+import { colors, type } from '@/theme/tokens';
 
-/** Placeholder join flow: enter the code a host shared. */
+const CODE_LENGTH = 6;
+
+/** Enter the code a host shared. */
 export default function JoinParade() {
-  const insets = useSafeAreaInsets();
   const [code, setCode] = useState('');
-  const ready = code.trim().length >= 4;
+  const [error, setError] = useState<string | undefined>();
+  const ready = code.trim().length === CODE_LENGTH;
+
+  const submit = () => {
+    if (!ready) return;
+    const parade = findParadeByCode(getState(), code);
+    if (!parade) {
+      setError('No parade with that code. Check it with the host.');
+      return;
+    }
+    goReplace('/invite/[code]', { code: parade.code });
+  };
 
   return (
-    <View style={[styles.screen, { paddingBottom: Math.max(insets.bottom, space.lg) }]}>
-      <PressableScale
-        pressedScale={0.9}
-        onPress={() => router.back()}
-        style={styles.close}
-        accessibilityLabel="Close">
-        <CloseIcon />
-      </PressableScale>
+    <Screen
+      keyboard
+      footer={<Button title="Find parade" onPress={submit} disabled={!ready} />}>
+      <Header left="close" title="Join a parade" subtitle="Enter the code from the host, or open the link they sent you." />
 
-      <Text style={[type.display, { marginTop: space.lg }]}>Join a parade</Text>
-      <Text style={[type.caption, { marginTop: space.sm, marginBottom: space.xl }]}>
-        Enter the code from the host, or open the link they sent you.
-      </Text>
+      <View style={styles.field}>
+        <TextField
+          label="Parade code"
+          mono
+          value={code}
+          onChangeText={(t) => {
+            setCode(t.toUpperCase().replace(/[^A-Z0-9]/g, ''));
+            setError(undefined);
+          }}
+          placeholder="HEND26"
+          autoCapitalize="characters"
+          autoCorrect={false}
+          autoComplete="off"
+          autoFocus
+          maxLength={CODE_LENGTH}
+          returnKeyType="go"
+          onSubmitEditing={submit}
+          error={error}
+          style={styles.code}
+        />
+      </View>
 
-      <TextInput
-        value={code}
-        onChangeText={(t) => setCode(t.toUpperCase())}
-        placeholder="PARADE CODE"
-        placeholderTextColor={colors.textFaint}
-        autoCapitalize="characters"
-        autoCorrect={false}
-        autoFocus
-        maxLength={8}
-        selectionColor={colors.indigoBright}
-        style={styles.code}
-      />
-
-      <View style={{ flex: 1 }} />
-
-      <PressableScale
-        disabled={!ready}
-        // TODO: look up the parade by code.
-        onPress={() => {}}
-        style={[styles.cta, !ready && { opacity: 0.4 }]}>
-        <Text style={styles.ctaText}>Find parade</Text>
-      </PressableScale>
-    </View>
+      <Text style={styles.already}>Already joined? It&apos;s on your My parades list.</Text>
+    </Screen>
   );
 }
 
 const styles = StyleSheet.create({
-  screen: { flex: 1, backgroundColor: colors.onyx, paddingHorizontal: space.xl, paddingTop: space.lg },
-  close: { width: 44, height: 44, marginLeft: -10, alignItems: 'center', justifyContent: 'center' },
-  code: {
-    height: 64,
-    borderRadius: radius.lg,
-    borderWidth: 1,
-    borderColor: colors.indigoBorder,
-    backgroundColor: colors.indigoTint,
-    color: colors.text,
-    fontSize: 24,
-    fontWeight: '700',
-    letterSpacing: 6,
-    textAlign: 'center',
-  },
-  cta: {
-    height: 60,
-    borderRadius: radius.lg,
-    backgroundColor: colors.indigo,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  ctaText: { fontSize: 18, fontWeight: '700', color: '#FFFFFF' },
+  field: { marginTop: 18 },
+  code: { fontSize: 24, letterSpacing: 6, textAlign: 'center' },
+  already: { ...type.caption, color: colors.textFaint, marginTop: 14, textAlign: 'center' },
 });
