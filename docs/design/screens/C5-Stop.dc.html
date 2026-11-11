@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Stop details</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&amp;family=Geist+Mono:wght@500;600&amp;display=swap">
+<style>
+body{margin:0;background:#0B0B10}
+button,a{transition:transform 160ms cubic-bezier(0.23,1,0.32,1)}
+button{font:inherit;cursor:pointer}
+button:active,a:active{transform:scale(0.97)}
+input,textarea{font:inherit}
+input::placeholder,textarea::placeholder{color:#85859C}
+input:focus,textarea:focus{outline:none;border-color:#5EF2B5}
+a{color:#6FF5BE}a:hover{color:#A6FAD6}
+</style>
+</helmet>
+<div style="width: 390px; height: 844px; position: relative; overflow: hidden; background: #0D0D12; font-family: 'Geist', system-ui, sans-serif; color: #F3F3F8">
+
+<img src="/_blob/2daccd12108edada0dc543b85b061edf" alt="" style="position: absolute; left: -757.4px; top: -810.6px; width: 1680px; height: 2240px; max-width: none">
+<svg viewBox="0 0 1200 1600" style="position: absolute; left: -757.4px; top: -810.6px; width: 1680px; height: 2240px" role="img" aria-label="Map zoomed in on stop 1 on High Street, with a dashed circle around it showing where the stop begins.">
+<polyline points="600,1050 600,700 900,700" fill="none" stroke="#5EF2B5" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"></polyline>
+<circle cx="680" cy="700" r="42" fill="#5EF2B5" fill-opacity="0.07" stroke="#5EF2B5" stroke-width="1.4" stroke-dasharray="4 4"></circle>
+<circle cx="680" cy="700" r="11" fill="#F3F3F8" stroke="#0B0B10" stroke-width="3"></circle>
+<text x="680" y="704.5" text-anchor="middle" font-family="Geist Mono, monospace" font-size="12" font-weight="600" fill="#0B0B10">1</text>
+<text x="680" y="668" text-anchor="middle" font-family="Geist, sans-serif" font-size="8" font-weight="600" fill="#A7A7BC">TOWN HALL</text>
+</svg>
+
+<div style="position: absolute; top: 16px; left: 12px; right: 12px; display: flex; justify-content: center">
+<div style="display: flex; align-items: center; gap: 8px; padding: 8px 12px; border-radius: 999px; background: #14141C; border: 1px solid #23233A; font-size: 13px; color: #A7A7BC">
+<span style="width: 10px; height: 10px; border-radius: 99px; border: 1.5px dashed #5EF2B5; box-sizing: border-box"></span>
+Starts when the lead car enters the circle
+</div>
+</div>
+
+<div style="position: absolute; left: 0; right: 0; bottom: 0; box-sizing: border-box; padding: 10px 20px 26px; background: #121219; border-top: 1px solid #23233A; border-radius: 28px 28px 0 0; display: flex; flex-direction: column; gap: 16px" role="dialog" aria-labelledby="stop-title">
+<div style="align-self: center; width: 40px; height: 5px; border-radius: 99px; background: #2F2F4A" aria-hidden="true"></div>
+
+<div style="display: flex; align-items: center; justify-content: space-between">
+<h2 id="stop-title" style="margin: 0; font-size: 24px; font-weight: 700; letter-spacing: -0.02em">Stop <span style="font-family: 'Geist Mono', ui-monospace, monospace">1</span></h2>
+<button type="button" aria-label="Delete this stop" style="width: 44px; height: 44px; border-radius: 14px; background: transparent; border: 1px solid #23233A; color: #A7A7BC; display: flex; align-items: center; justify-content: center; padding: 0">
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7h16"></path><path d="M9 7V4h6v3"></path><path d="M6 7l1 13h10l1-13"></path></svg>
+</button>
+</div>
+
+<div style="display: flex; flex-direction: column; gap: 8px">
+<label for="sname" style="font-size: 14px; font-weight: 500; color: #A7A7BC">Name</label>
+<input id="sname" type="text" value="Menorah lighting" style="height: 52px; box-sizing: border-box; padding: 0 16px; background: #0B0B10; border: 1px solid #23233A; border-radius: 14px; color: #F3F3F8; font-size: 17px">
+</div>
+
+<div style="display: flex; gap: 10px; align-items: flex-end">
+<fieldset style="flex: 1; margin: 0; padding: 0; border: 0; min-width: 0">
+<legend style="padding: 0; margin-bottom: 8px; font-size: 14px; font-weight: 500; color: #A7A7BC">Cars</legend>
+<div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 3px; padding: 3px; border-radius: 14px; background: #0B0B10; border: 1px solid #23233A">
+<button type="button" aria-pressed="true" style="height: 44px; border-radius: 11px; background: #23233A; border: 0; color: #F3F3F8; font-size: 15px; font-weight: 600">Stop</button>
+<button type="button" aria-pressed="false" style="height: 44px; border-radius: 11px; background: transparent; border: 0; color: #A7A7BC; font-size: 15px; font-weight: 500">Drive past</button>
+</div>
+</fieldset>
+<div style="display: flex; flex-direction: column; gap: 8px">
+<span id="dur" style="font-size: 14px; font-weight: 500; color: #A7A7BC">For</span>
+<div style="display: flex; align-items: center; padding: 3px; border-radius: 14px; background: #0B0B10; border: 1px solid #23233A" role="group" aria-labelledby="dur">
+<button type="button" aria-label="Shorter" style="width: 44px; height: 44px; border-radius: 11px; background: transparent; border: 0; color: #F3F3F8; display: flex; align-items: center; justify-content: center; padding: 0"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"></path></svg></button>
+<span style="min-width: 58px; text-align: center; font-family: 'Geist Mono', ui-monospace, monospace; font-size: 16px; font-weight: 600">10 min</span>
+<button type="button" aria-label="Longer" style="width: 44px; height: 44px; border-radius: 11px; background: transparent; border: 0; color: #F3F3F8; display: flex; align-items: center; justify-content: center; padding: 0"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14"></path><path d="M5 12h14"></path></svg></button>
+</div>
+</div>
+</div>
+
+<div style="display: flex; flex-direction: column; gap: 10px; padding: 14px; border-radius: 18px; background: #14141C; border: 1px solid #23233A">
+<span style="font-size: 13px; font-weight: 600; letter-spacing: 0.04em; color: #8C8CA4">WHEN THE LEAD CAR ARRIVES</span>
+<div style="display: flex; align-items: center; justify-content: space-between; gap: 12px">
+<span id="pause-l" style="font-size: 16px">Pause the music</span>
+<button type="button" role="switch" aria-checked="true" aria-labelledby="pause-l" style="width: 52px; height: 32px; flex-shrink: 0; border-radius: 99px; background: #5EF2B5; border: 0; padding: 0; position: relative"><span style="position: absolute; top: 3px; right: 3px; width: 26px; height: 26px; border-radius: 99px; background: #04150E"></span></button>
+</div>
+<label for="say" style="font-size: 16px">Read this out to every car</label>
+<textarea id="say" rows="3" style="box-sizing: border-box; padding: 12px 14px; background: #0B0B10; border: 1px solid #23233A; border-radius: 12px; color: #F3F3F8; font-size: 15px; line-height: 1.45; resize: none">We've reached the Town Hall. Pull in behind the car in front and turn your engine off.</textarea>
+</div>
+
+<div style="display: flex; gap: 10px">
+<a href="C3-Route.dc.html" style="height: 56px; display: flex; align-items: center; padding: 0 20px; border-radius: 18px; border: 1px solid #2F2F4A; color: #F3F3F8; font-size: 16px; font-weight: 500; text-decoration: none">Cancel</a>
+<a href="C3-Route.dc.html" style="flex: 1; height: 56px; display: flex; align-items: center; justify-content: center; border-radius: 18px; background: #5EF2B5; color: #04150E; font-size: 17px; font-weight: 600; text-decoration: none">Save stop</a>
+</div>
+</div>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+renderVals() {
+return {};
+}
+}
+</script>
+</body>
+</html>

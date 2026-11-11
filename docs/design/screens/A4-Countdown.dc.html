@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Countdown to start</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&amp;family=Geist+Mono:wght@500;600&amp;display=swap">
+<style>
+body{margin:0;background:#0B0B10}
+a{color:#6FF5BE}a:hover{color:#A6FAD6}
+</style>
+</helmet>
+<div style="width: 390px; height: 844px; box-sizing: border-box; padding: 48px 24px 32px; display: flex; flex-direction: column; align-items: center; gap: 24px; background: #0B0B10; font-family: 'Geist', system-ui, sans-serif; color: #F3F3F8; overflow: hidden" role="timer" aria-live="assertive" aria-label="Parade starts in 3 seconds">
+
+<span style="font-size: 15px; color: #A7A7BC">Chanukah Car Parade</span>
+
+<div style="flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 28px">
+<div style="position: relative; width: 240px; height: 240px">
+<svg width="240" height="240" viewBox="0 0 240 240" aria-hidden="true" style="position: absolute; left: 0; top: 0">
+<circle cx="120" cy="120" r="112" fill="none" stroke="#1C1C27" stroke-width="6"></circle>
+<circle cx="120" cy="120" r="112" fill="none" stroke="#5EF2B5" stroke-width="6" stroke-linecap="round" stroke-dasharray="703.7" stroke-dashoffset="281.5" transform="rotate(-90 120 120)"></circle>
+</svg>
+<span style="position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; font-family: 'Geist Mono', ui-monospace, monospace; font-size: 128px; font-weight: 600; letter-spacing: -0.06em">3</span>
+</div>
+<div style="display: flex; flex-direction: column; align-items: center; gap: 8px; text-align: center">
+<span style="font-size: 26px; font-weight: 700; letter-spacing: -0.02em">Here we go</span>
+<span style="font-size: 15px; color: #A7A7BC; line-height: 1.45; max-width: 280px">Music starts on zero, in every car at once.</span>
+</div>
+</div>
+
+<div style="align-self: stretch; display: flex; align-items: center; gap: 14px; padding: 14px; border-radius: 20px; background: #14141C; border: 1px solid #23233A">
+<span style="width: 48px; height: 48px; flex-shrink: 0; border-radius: 14px; background: #1A1736; display: flex; align-items: center; justify-content: center">
+<svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#B0A6FF" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20V6"></path><path d="M7 11l5-5 5 5"></path></svg>
+</span>
+<span style="display: flex; flex-direction: column; gap: 2px">
+<span style="font-size: 13px; color: #8C8CA4">First</span>
+<span style="font-size: 17px; font-weight: 500">Follow the car in front out of the car park</span>
+</span>
+</div>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+renderVals() {
+return {};
+}
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>New parade: meeting point</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&amp;family=Geist+Mono:wght@500;600&amp;display=swap">
+<style>
+body{margin:0;background:#0B0B10}
+button,a{transition:transform 160ms cubic-bezier(0.23,1,0.32,1)}
+button{font:inherit;cursor:pointer}
+button:active,a:active{transform:scale(0.97)}
+input,textarea{font:inherit}
+input::placeholder,textarea::placeholder{color:#85859C}
+input:focus,textarea:focus{outline:none;border-color:#5EF2B5}
+a{color:#6FF5BE}a:hover{color:#A6FAD6}
+</style>
+</helmet>
+<div style="width: 390px; height: 844px; box-sizing: border-box; padding: 24px 20px 28px; display: flex; flex-direction: column; gap: 16px; background: #0B0B10; font-family: 'Geist', system-ui, sans-serif; color: #F3F3F8; overflow: hidden">
+
+<div style="display: flex; flex-direction: column; gap: 14px">
+<div style="display: flex; align-items: center; margin: 0 -8px">
+<a href="C1-Basics.dc.html" aria-label="Back" style="width: 44px; height: 44px; display: flex; align-items: center; justify-content: center; border-radius: 14px; color: #F3F3F8">
+<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 6l-6 6 6 6"></path></svg>
+</a>
+</div>
+<div style="display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 4px" aria-hidden="true">
+<div style="height: 3px; border-radius: 99px; background: #5EF2B5"></div>
+<div style="height: 3px; border-radius: 99px; background: #5EF2B5"></div>
+<div style="height: 3px; border-radius: 99px; background: #23233A"></div>
+<div style="height: 3px; border-radius: 99px; background: #23233A"></div>
+<div style="height: 3px; border-radius: 99px; background: #23233A"></div>
+<div style="height: 3px; border-radius: 99px; background: #23233A"></div>
+</div>
+<div style="display: flex; flex-direction: column; gap: 4px">
+<span style="font-size: 13px; color: #8C8CA4">Step <span style="font-family: 'Geist Mono', ui-monospace, monospace">2</span> of 6</span>
+<h1 style="margin: 0; font-size: 28px; font-weight: 700; letter-spacing: -0.025em">Meeting point</h1>
+</div>
+</div>
+
+<div style="position: relative">
+<label for="where" style="position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%)">Search for the meeting point</label>
+<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#8C8CA4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="position: absolute; left: 16px; top: 17px"><circle cx="11" cy="11" r="6.5"></circle><path d="M20 20l-4.5-4.5"></path></svg>
+<input id="where" type="text" value="Leisure Centre car park, Church Road" style="width: 100%; height: 54px; box-sizing: border-box; padding: 0 16px 0 46px; background: #14141C; border: 1px solid #23233A; border-radius: 14px; color: #F3F3F8; font-size: 16px">
+</div>
+
+<div style="position: relative; height: 300px; border-radius: 20px; overflow: hidden; background: #0D0D12; border: 1px solid #23233A; flex-shrink: 0">
+<img src="/_blob/2daccd12108edada0dc543b85b061edf" alt="" style="position: absolute; left: -902.4px; top: -2472px; width: 2880px; height: 3840px; max-width: none">
+<svg viewBox="0 0 1200 1600" style="position: absolute; left: -902.4px; top: -2472px; width: 2880px; height: 3840px" role="img" aria-label="Map zoomed in on the Leisure Centre car park. The pin sits on the car park entrance from Church Road.">
+<text x="450" y="1146" text-anchor="middle" font-family="Geist, sans-serif" font-size="5" font-weight="600" fill="#8C8CA4">LEISURE CENTRE CAR PARK</text>
+<circle cx="450" cy="1068" r="9" fill="#5EF2B5" fill-opacity="0.16"></circle>
+<circle cx="450" cy="1068" r="2.2" fill="#5EF2B5"></circle>
+<path d="M 450 1066 C 444 1059, 441.5 1055, 441.5 1051.5 A 8.5 8.5 0 1 1 458.5 1051.5 C 458.5 1055, 456 1059, 450 1066 Z" fill="#5EF2B5" stroke="#0B0B10" stroke-width="1"></path>
+<circle cx="450" cy="1051.5" r="3" fill="#04150E"></circle>
+</svg>
+<div style="position: absolute; top: 10px; right: 10px; display: flex; padding: 3px; border-radius: 12px; background: #14141C; border: 1px solid #23233A" role="group" aria-label="Map style">
+<button type="button" aria-pressed="true" style="height: 38px; padding: 0 12px; border-radius: 9px; background: #23233A; border: 0; color: #F3F3F8; font-size: 13px; font-weight: 500">Map</button>
+<button type="button" aria-pressed="false" style="height: 38px; padding: 0 12px; border-radius: 9px; background: transparent; border: 0; color: #A7A7BC; font-size: 13px; font-weight: 500">Satellite</button>
+</div>
+<div style="position: absolute; left: 10px; bottom: 10px; display: flex; align-items: center; gap: 8px; padding: 8px 12px; border-radius: 999px; background: #14141C; border: 1px solid #23233A; font-size: 13px; color: #A7A7BC">
+<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#6FF5BE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v18"></path><path d="M3 12h18"></path><path d="M9 6l3-3 3 3"></path><path d="M9 18l3 3 3-3"></path></svg>
+Drag the pin onto the exact entrance
+</div>
+</div>
+
+<span style="margin-top: -6px; font-size: 13px; color: #8C8CA4">Pin set at <span style="font-family: 'Geist Mono', ui-monospace, monospace; color: #A7A7BC">51.58731, −0.22710</span> · the route starts here</span>
+
+<div style="display: flex; flex-direction: column; gap: 8px">
+<label for="notes" style="font-size: 14px; font-weight: 500; color: #A7A7BC">Directions for drivers <span style="color: #8C8CA4; font-weight: 400">· optional</span></label>
+<textarea id="notes" rows="3" style="box-sizing: border-box; padding: 14px 16px; background: #14141C; border: 1px solid #23233A; border-radius: 14px; color: #F3F3F8; font-size: 15px; line-height: 1.45; resize: none">Enter from Church Road. Park in rows facing the exit, in the order you arrive.</textarea>
+</div>
+
+<div style="flex: 1"></div>
+
+<a href="C3-Route.dc.html" style="height: 58px; display: flex; align-items: center; justify-content: center; border-radius: 18px; background: #5EF2B5; color: #04150E; font-size: 17px; font-weight: 600; text-decoration: none; flex-shrink: 0">Continue</a>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+renderVals() {
+return {};
+}
+}
+</script>
+</body>
+</html>

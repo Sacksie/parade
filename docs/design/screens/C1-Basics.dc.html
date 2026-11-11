@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>New parade: basics</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&amp;family=Geist+Mono:wght@500;600&amp;display=swap">
+<style>
+body{margin:0;background:#0B0B10}
+button,a{transition:transform 160ms cubic-bezier(0.23,1,0.32,1)}
+button{font:inherit;cursor:pointer}
+button:active,a:active{transform:scale(0.97)}
+input{font:inherit}
+input::placeholder{color:#85859C}
+input:focus{outline:none;border-color:#5EF2B5}
+a{color:#6FF5BE}a:hover{color:#A6FAD6}
+</style>
+</helmet>
+<div style="width: 390px; height: 844px; box-sizing: border-box; padding: 24px 20px 28px; display: flex; flex-direction: column; gap: 18px; background: #0B0B10; font-family: 'Geist', system-ui, sans-serif; color: #F3F3F8; overflow: hidden">
+
+<div style="display: flex; flex-direction: column; gap: 14px">
+<div style="display: flex; align-items: center; justify-content: space-between; margin: 0 -8px">
+<button type="button" aria-label="Close" style="width: 44px; height: 44px; display: flex; align-items: center; justify-content: center; border-radius: 14px; background: transparent; border: 0; color: #F3F3F8; padding: 0">
+<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12"></path><path d="M18 6L6 18"></path></svg>
+</button>
+<span style="font-size: 14px; color: #8C8CA4">Saved as draft</span>
+</div>
+<div style="display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 4px" aria-hidden="true">
+<div style="height: 3px; border-radius: 99px; background: #5EF2B5"></div>
+<div style="height: 3px; border-radius: 99px; background: #23233A"></div>
+<div style="height: 3px; border-radius: 99px; background: #23233A"></div>
+<div style="height: 3px; border-radius: 99px; background: #23233A"></div>
+<div style="height: 3px; border-radius: 99px; background: #23233A"></div>
+<div style="height: 3px; border-radius: 99px; background: #23233A"></div>
+</div>
+<div style="display: flex; flex-direction: column; gap: 4px">
+<span style="font-size: 13px; color: #8C8CA4">Step <span style="font-family: 'Geist Mono', ui-monospace, monospace">1</span> of 6</span>
+<h1 style="margin: 0; font-size: 28px; font-weight: 700; letter-spacing: -0.025em">The basics</h1>
+</div>
+</div>
+
+<form style="margin: 0; display: flex; flex-direction: column; gap: 14px">
+<div style="display: flex; flex-direction: column; gap: 8px">
+<label for="pname" style="font-size: 14px; font-weight: 500; color: #A7A7BC">Parade name</label>
+<input id="pname" type="text" value="Chanukah Car Parade" style="height: 54px; box-sizing: border-box; padding: 0 16px; background: #14141C; border: 1px solid #23233A; border-radius: 14px; color: #F3F3F8; font-size: 17px">
+</div>
+
+<div style="display: flex; flex-direction: column; gap: 8px">
+<label for="host" style="font-size: 14px; font-weight: 500; color: #A7A7BC">Hosted by <span style="color: #8C8CA4; font-weight: 400">· optional</span></label>
+<input id="host" type="text" placeholder="Your community, club or school" style="height: 54px; box-sizing: border-box; padding: 0 16px; background: #14141C; border: 1px solid #23233A; border-radius: 14px; color: #F3F3F8; font-size: 17px">
+</div>
+
+<div style="display: flex; flex-direction: column; gap: 8px">
+<label for="pdate" style="font-size: 14px; font-weight: 500; color: #A7A7BC">Date</label>
+<button id="pdate" type="button" style="height: 54px; display: flex; align-items: center; justify-content: space-between; padding: 0 16px; background: #14141C; border: 1px solid #23233A; border-radius: 14px; color: #F3F3F8; font-size: 17px; text-align: left">
+Sunday 6 December
+<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#8C8CA4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="5" width="16" height="15" rx="2"></rect><path d="M4 10h16"></path><path d="M9 3v4"></path><path d="M15 3v4"></path></svg>
+</button>
+</div>
+
+<div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px">
+<div style="display: flex; flex-direction: column; gap: 8px">
+<label for="arrive" style="font-size: 14px; font-weight: 500; color: #A7A7BC">Cars arrive from</label>
+<button id="arrive" type="button" style="height: 54px; padding: 0 16px; background: #14141C; border: 1px solid #23233A; border-radius: 14px; color: #F3F3F8; font-size: 17px; font-family: 'Geist Mono', ui-monospace, monospace; text-align: left">17:15</button>
+</div>
+<div style="display: flex; flex-direction: column; gap: 8px">
+<label for="go" style="font-size: 14px; font-weight: 500; color: #A7A7BC">Sets off</label>
+<button id="go" type="button" style="height: 54px; padding: 0 16px; background: #14141C; border: 1px solid #23233A; border-radius: 14px; color: #F3F3F8; font-size: 17px; font-family: 'Geist Mono', ui-monospace, monospace; text-align: left">17:45</button>
+</div>
+</div>
+<span style="margin-top: -6px; font-size: 13px; color: #8C8CA4">Finish time is worked out from the route.</span>
+
+<fieldset style="margin: 0; padding: 0; border: 0; display: flex; flex-direction: column; gap: 8px">
+<legend style="padding: 0; margin-bottom: 8px; font-size: 14px; font-weight: 500; color: #A7A7BC">Who can join</legend>
+<div style="display: flex; flex-direction: column; border-radius: 16px; background: #14141C; border: 1px solid #23233A">
+<label style="display: flex; align-items: center; gap: 12px; min-height: 54px; padding: 0 16px; border-bottom: 1px solid #1E1E2E">
+<input type="radio" name="who" checked="checked" style="width: 20px; height: 20px; margin: 0; accent-color: #5EF2B5">
+<span style="display: flex; flex-direction: column; gap: 2px"><span style="font-size: 16px">Anyone with the link</span><span style="font-size: 13px; color: #8C8CA4">Best for open community events</span></span>
+</label>
+<label style="display: flex; align-items: center; gap: 12px; min-height: 54px; padding: 0 16px">
+<input type="radio" name="who" style="width: 20px; height: 20px; margin: 0; accent-color: #5EF2B5">
+<span style="display: flex; flex-direction: column; gap: 2px"><span style="font-size: 16px">I approve each car</span><span style="font-size: 13px; color: #8C8CA4">You'll see requests before the day</span></span>
+</label>
+</div>
+</fieldset>
+</form>
+
+<div style="flex: 1"></div>
+
+<a href="C2-Meet.dc.html" style="height: 58px; display: flex; align-items: center; justify-content: center; border-radius: 18px; background: #5EF2B5; color: #04150E; font-size: 17px; font-weight: 600; text-decoration: none">Continue</a>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+renderVals() {
+return {};
+}
+}
+</script>
+</body>
+</html>

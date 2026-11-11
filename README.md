@@ -23,3 +23,7 @@ npm start              # scan the QR code with Expo Go, or press i / a for a sim
 - `src/lib/supabase.ts`: shared Supabase client (`getSupabase()`)
 
 App IDs: `com.sacksie.parade` on both iOS and Android.
+
+## Design
+
+The v2 design handoff (journey, roles, logic, data model, visual system, build order) is in [`docs/design/README.md`](docs/design/README.md), with screen markup in `docs/design/screens/`.

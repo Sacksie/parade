@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Check the route</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&amp;family=Geist+Mono:wght@500;600&amp;display=swap">
+<style>
+body{margin:0;background:#0B0B10}
+button,a{transition:transform 160ms cubic-bezier(0.23,1,0.32,1)}
+button{font:inherit;cursor:pointer}
+button:active,a:active{transform:scale(0.97)}
+a{color:#6FF5BE}a:hover{color:#A6FAD6}
+</style>
+</helmet>
+<div style="width: 390px; height: 844px; box-sizing: border-box; padding: 24px 16px 28px; display: flex; flex-direction: column; gap: 14px; background: #0B0B10; font-family: 'Geist', system-ui, sans-serif; color: #F3F3F8; overflow: hidden">
+
+<div style="display: flex; flex-direction: column; gap: 10px; padding: 0 4px">
+<div style="display: flex; align-items: center; margin: 0 -12px">
+<a href="C3-Route.dc.html" aria-label="Back to the map" style="width: 44px; height: 44px; display: flex; align-items: center; justify-content: center; border-radius: 14px; color: #F3F3F8">
+<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 6l-6 6 6 6"></path></svg>
+</a>
+</div>
+<h1 style="margin: 0; font-size: 28px; font-weight: 700; letter-spacing: -0.025em">Check the route</h1>
+<span style="font-size: 15px; color: #A7A7BC">This is exactly what every driver will be told. <span style="color: #FFCB6B">2 turns to look at.</span></span>
+</div>
+
+<ol style="margin: 0; padding: 0; list-style: none; border-radius: 20px; background: #14141C; border: 1px solid #23233A">
+<li style="display: flex; align-items: center; gap: 12px; min-height: 46px; padding: 0 14px; border-bottom: 1px solid #1E1E2E">
+<span style="width: 24px; height: 24px; flex-shrink: 0; border-radius: 99px; border: 2px solid #5EF2B5; box-sizing: border-box; color: #6FF5BE; font-size: 11px; font-weight: 700; display: flex; align-items: center; justify-content: center">S</span>
+<span style="flex: 1; font-size: 15px">Leave car park, right onto Church Rd</span>
+</li>
+<li style="padding: 10px 14px 12px; border-bottom: 1px solid #1E1E2E; background: #1A1710; display: flex; flex-direction: column; gap: 6px">
+<span style="display: flex; align-items: center; gap: 12px">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#FFCB6B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink: 0"><path d="M17 20V11a3 3 0 0 0-3-3H6"></path><path d="M10 4L6 8l4 4"></path></svg>
+<span style="flex: 1; font-size: 15px">Left onto Station Road</span>
+<span style="font-family: 'Geist Mono', ui-monospace, monospace; font-size: 13px; color: #A7A7BC">0.6 km</span>
+</span>
+<span style="padding-left: 36px; font-size: 13px; line-height: 1.4; color: #FFCB6B">No traffic lights. The convoy will break up here. Put a marshal on this corner.</span>
+</li>
+<li style="display: flex; align-items: center; gap: 12px; min-height: 46px; padding: 0 14px; border-bottom: 1px solid #1E1E2E">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#A7A7BC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink: 0"><path d="M7 20V11a3 3 0 0 1 3-3h8"></path><path d="M14 4l4 4-4 4"></path></svg>
+<span style="flex: 1; font-size: 15px">Right onto High Street</span>
+<span style="font-family: 'Geist Mono', ui-monospace, monospace; font-size: 13px; color: #A7A7BC">2.0 km</span>
+</li>
+<li style="display: flex; align-items: center; gap: 12px; min-height: 46px; padding: 0 14px; border-bottom: 1px solid #1E1E2E">
+<span style="width: 24px; height: 24px; flex-shrink: 0; border-radius: 99px; background: #F3F3F8; color: #0B0B10; font-family: 'Geist Mono', ui-monospace, monospace; font-size: 12px; font-weight: 600; display: flex; align-items: center; justify-content: center">1</span>
+<span style="flex: 1; font-size: 15px">Menorah lighting</span>
+<span style="font-size: 13px; color: #A7A7BC">Stop · <span style="font-family: 'Geist Mono', ui-monospace, monospace">10 min</span></span>
+</li>
+<li style="display: flex; align-items: center; gap: 12px; min-height: 46px; padding: 0 14px; border-bottom: 1px solid #1E1E2E">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#A7A7BC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink: 0"><path d="M17 20V11a3 3 0 0 0-3-3H6"></path><path d="M10 4L6 8l4 4"></path></svg>
+<span style="flex: 1; font-size: 15px">Left onto Brent Way</span>
+<span style="font-family: 'Geist Mono', ui-monospace, monospace; font-size: 13px; color: #A7A7BC">3.2 km</span>
+</li>
+<li style="display: flex; align-items: center; gap: 12px; min-height: 46px; padding: 0 14px; border-bottom: 1px solid #1E1E2E">
+<span style="width: 24px; height: 24px; flex-shrink: 0; border-radius: 99px; background: #F3F3F8; color: #0B0B10; font-family: 'Geist Mono', ui-monospace, monospace; font-size: 12px; font-weight: 600; display: flex; align-items: center; justify-content: center">2</span>
+<span style="flex: 1; font-size: 15px">Care home</span>
+<span style="font-size: 13px; color: #A7A7BC">Drive past slowly</span>
+</li>
+<li style="display: flex; align-items: center; gap: 12px; min-height: 46px; padding: 0 14px; border-bottom: 1px solid #1E1E2E">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#A7A7BC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink: 0"><path d="M17 20V11a3 3 0 0 0-3-3H6"></path><path d="M10 4L6 8l4 4"></path></svg>
+<span style="flex: 1; font-size: 15px">Left onto Queens Road</span>
+<span style="font-family: 'Geist Mono', ui-monospace, monospace; font-size: 13px; color: #A7A7BC">4.4 km</span>
+</li>
+<li style="padding: 10px 14px 12px; border-bottom: 1px solid #1E1E2E; background: #1A1710; display: flex; flex-direction: column; gap: 6px">
+<span style="display: flex; align-items: center; gap: 12px">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#FFCB6B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink: 0"><path d="M7 20V11a3 3 0 0 1 3-3h8"></path><path d="M14 4l4 4-4 4"></path></svg>
+<span style="flex: 1; font-size: 15px">Right onto Station Road</span>
+<span style="font-family: 'Geist Mono', ui-monospace, monospace; font-size: 13px; color: #A7A7BC">5.6 km</span>
+</span>
+<span style="padding-left: 36px; font-size: 13px; line-height: 1.4; color: #FFCB6B">Turning across a main road. Expect long waits; the lead car should slow down after it.</span>
+</li>
+<li style="display: flex; align-items: center; gap: 12px; min-height: 46px; padding: 0 14px">
+<span style="width: 24px; height: 24px; flex-shrink: 0; border-radius: 99px; border: 2px solid #5EF2B5; box-sizing: border-box; color: #6FF5BE; font-size: 11px; font-weight: 700; display: flex; align-items: center; justify-content: center">F</span>
+<span style="flex: 1; font-size: 15px">Finish · Station Road</span>
+<span style="font-family: 'Geist Mono', ui-monospace, monospace; font-size: 13px; color: #A7A7BC">6.5 km</span>
+</li>
+</ol>
+
+<div style="display: flex; align-items: center; gap: 12px; padding: 14px; border-radius: 18px; background: #1A1736; border: 1px solid #3A3275">
+<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#B0A6FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink: 0"><circle cx="12" cy="12" r="9"></circle><circle cx="12" cy="12" r="3"></circle></svg>
+<span style="flex: 1; display: flex; flex-direction: column; gap: 2px">
+<span style="font-size: 15px; font-weight: 600">Do a practice drive</span>
+<span style="font-size: 13px; color: #A7A7BC; line-height: 1.35">We'll flag anywhere the real road doesn't match the map.</span>
+</span>
+<button type="button" style="height: 44px; padding: 0 14px; border-radius: 13px; background: #2A2552; border: 1px solid #3A3275; color: #F3F3F8; font-size: 14px; font-weight: 600">Start</button>
+</div>
+
+<div style="flex: 1"></div>
+
+<a href="C6-Music.dc.html" style="height: 58px; display: flex; align-items: center; justify-content: center; border-radius: 18px; background: #5EF2B5; color: #04150E; font-size: 17px; font-weight: 600; text-decoration: none; flex-shrink: 0">Route looks right</a>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+renderVals() {
+return {};
+}
+}
+</script>
+</body>
+</html>
