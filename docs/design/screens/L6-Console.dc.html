@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Organiser console</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&amp;family=Geist+Mono:wght@500;600&amp;display=swap">
+<style>
+body{margin:0;background:#0B0B10}
+button,a{transition:transform 160ms cubic-bezier(0.23,1,0.32,1)}
+button{font:inherit;cursor:pointer}
+button:active,a:active{transform:scale(0.97)}
+input{font:inherit}
+input::placeholder{color:#85859C}
+input:focus{outline:none;border-color:#5EF2B5}
+a{color:#6FF5BE}a:hover{color:#A6FAD6}
+</style>
+</helmet>
+<div style="width: 390px; height: 844px; box-sizing: border-box; padding: 20px 16px 22px; display: flex; flex-direction: column; gap: 10px; background: #0B0B10; font-family: 'Geist', system-ui, sans-serif; color: #F3F3F8; overflow: hidden">
+
+<div style="display: flex; align-items: center; justify-content: space-between; padding: 0 4px">
+<div style="display: flex; flex-direction: column; gap: 2px">
+<span style="display: flex; align-items: center; gap: 6px; font-size: 13px; color: #6FF5BE"><span style="width: 7px; height: 7px; border-radius: 99px; background: #5EF2B5"></span>Live · <span style="font-family: 'Geist Mono', ui-monospace, monospace">32 min</span></span>
+<h1 style="margin: 0; font-size: 19px; font-weight: 700; letter-spacing: -0.02em">Chanukah Car Parade</h1>
+</div>
+<span style="padding: 6px 12px; border-radius: 999px; background: #14141C; border: 1px solid #23233A; font-size: 13px; color: #A7A7BC"><span style="font-family: 'Geist Mono', ui-monospace, monospace; color: #F3F3F8">87</span> cars</span>
+</div>
+
+<div style="position: relative; height: 196px; border-radius: 20px; overflow: hidden; background: #0D0D12; border: 1px solid #23233A; flex-shrink: 0">
+<img src="/_blob/2daccd12108edada0dc543b85b061edf" alt="" style="position: absolute; left: -104.6px; top: -259px; width: 504px; height: 672px; max-width: none">
+<svg viewBox="0 0 1200 1600" style="position: absolute; left: -104.6px; top: -259px; width: 504px; height: 672px" role="img" aria-label="Convoy overview: lead car on High Street near Brent Way, a group following, a gap at the Station Road lights, the rest on Station Road and Church Road, and a broken-down car on Church Road.">
+<polyline points="450,1110 450,1050 600,1050 600,700 900,700 900,400" fill="none" stroke="#3A3275" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"></polyline>
+<polyline points="738,700 600,700 600,742" fill="none" stroke="#FFCB6B" stroke-width="7" stroke-dasharray="6 12" stroke-linecap="round" stroke-linejoin="round"></polyline>
+<g fill="#7C6CFF" stroke="#0B0B10" stroke-width="3">
+<circle cx="846" cy="700" r="9"></circle><circle cx="816" cy="700" r="9"></circle><circle cx="786" cy="700" r="9"></circle><circle cx="756" cy="700" r="9"></circle>
+<circle cx="600" cy="760" r="9"></circle><circle cx="600" cy="790" r="9"></circle><circle cx="600" cy="820" r="9"></circle><circle cx="600" cy="850" r="9"></circle><circle cx="600" cy="880" r="9"></circle><circle cx="600" cy="910" r="9"></circle><circle cx="600" cy="940" r="9"></circle><circle cx="600" cy="970" r="9"></circle><circle cx="600" cy="1000" r="9"></circle><circle cx="600" cy="1030" r="9"></circle>
+<circle cx="575" cy="1050" r="9"></circle><circle cx="545" cy="1050" r="9"></circle><circle cx="490" cy="1050" r="9"></circle>
+</g>
+<circle cx="518" cy="1050" r="13" fill="#FF5C6C" stroke="#0B0B10" stroke-width="3"></circle>
+<circle cx="460" cy="1050" r="11" fill="#0B0B10" stroke="#B0A6FF" stroke-width="4"></circle>
+<circle cx="875" cy="700" r="14" fill="#F3F3F8" stroke="#5EF2B5" stroke-width="5"></circle>
+</svg>
+<div style="position: absolute; left: 10px; bottom: 10px; display: flex; gap: 6px; font-size: 12px">
+<span style="display: flex; align-items: center; gap: 5px; padding: 5px 9px; border-radius: 999px; background: #14141C; border: 1px solid #23233A; color: #A7A7BC"><span style="width: 8px; height: 8px; border-radius: 99px; background: #F3F3F8; border: 2px solid #5EF2B5; box-sizing: border-box"></span>Lead (you)</span>
+<span style="display: flex; align-items: center; gap: 5px; padding: 5px 9px; border-radius: 999px; background: #14141C; border: 1px solid #23233A; color: #A7A7BC"><span style="width: 8px; height: 8px; border-radius: 99px; border: 2px solid #B0A6FF; box-sizing: border-box"></span>Tail</span>
+</div>
+</div>
+
+<div style="padding: 12px 14px; border-radius: 18px; background: #2A1118; border: 1px solid #5C2532; display: flex; flex-direction: column; gap: 10px" role="alert">
+<div style="display: flex; gap: 10px; align-items: flex-start">
+<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FF8A94" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink: 0; margin-top: 1px"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4l-2.6 2.6-2.4-.6-.6-2.4 2.6-2.6z"></path></svg>
+<span style="flex: 1; display: flex; flex-direction: column; gap: 2px"><span style="font-size: 15px; font-weight: 600">Car 07 has broken down</span><span style="font-size: 13px; color: #FFB3BA">The Cohen family · Church Road · <span style="font-family: 'Geist Mono', ui-monospace, monospace">1 min</span> ago</span></span>
+</div>
+<div style="display: flex; gap: 8px">
+<button type="button" style="flex: 1; height: 44px; border-radius: 13px; background: #F3F3F8; border: 0; color: #0B0B10; font-size: 14px; font-weight: 600">Send tail car</button>
+<a href="tel:07700900000" style="height: 44px; display: flex; align-items: center; padding: 0 16px; border-radius: 13px; border: 1px solid #5C2532; color: #F3F3F8; font-size: 14px; font-weight: 500; text-decoration: none">Call</a>
+</div>
+</div>
+
+<div style="padding: 12px 14px; border-radius: 18px; background: #261F0F; border: 1px solid #574619; display: flex; align-items: center; gap: 10px">
+<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FFCB6B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink: 0"><path d="M3 12h5"></path><path d="M16 12h5"></path><path d="M8 7v10"></path><path d="M16 7v10"></path></svg>
+<span style="flex: 1; display: flex; flex-direction: column; gap: 2px"><span style="font-size: 15px; font-weight: 600">Gap at Station Rd lights</span><span style="font-size: 13px; color: #FFE1A6">Lead car told to slow down</span></span>
+<button type="button" style="height: 44px; padding: 0 12px; border-radius: 13px; background: transparent; border: 1px solid #574619; color: #F3F3F8; font-size: 14px; font-weight: 500">Announce</button>
+</div>
+
+<div style="display: flex; align-items: center; gap: 10px; padding: 10px 12px; border-radius: 18px; background: #14141C; border: 1px solid #23233A">
+<div style="flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 2px">
+<span style="font-size: 15px; font-weight: 600">Maoz Tzur</span>
+<span style="font-size: 13px; color: #A7A7BC"><span style="font-family: 'Geist Mono', ui-monospace, monospace">4</span>/11 · <span style="font-family: 'Geist Mono', ui-monospace, monospace; color: #6FF5BE">86/87</span> in sync · stop 1 in <span style="font-family: 'Geist Mono', ui-monospace, monospace">2 min</span></span>
+</div>
+<button type="button" aria-label="Pause music in every car" style="width: 44px; height: 44px; border-radius: 13px; background: #F3F3F8; border: 0; color: #0B0B10; display: flex; align-items: center; justify-content: center; padding: 0"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><rect x="6" y="5" width="4" height="14" rx="1"></rect><rect x="14" y="5" width="4" height="14" rx="1"></rect></svg></button>
+<button type="button" aria-label="Next track in every car" style="width: 44px; height: 44px; border-radius: 13px; background: #1C1C27; border: 1px solid #2F2F4A; color: #F3F3F8; display: flex; align-items: center; justify-content: center; padding: 0"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 5l10 7-10 7V5z"></path><path d="M19 5v14"></path></svg></button>
+</div>
+
+<div style="flex: 1"></div>
+
+<div style="display: flex; flex-direction: column; gap: 8px">
+<div style="display: flex; gap: 6px; overflow: hidden">
+<button type="button" style="flex-shrink: 0; height: 38px; padding: 0 12px; border-radius: 999px; background: #14141C; border: 1px solid #2F2F4A; color: #F3F3F8; font-size: 13px">Slow down</button>
+<button type="button" style="flex-shrink: 0; height: 38px; padding: 0 12px; border-radius: 999px; background: #14141C; border: 1px solid #2F2F4A; color: #F3F3F8; font-size: 13px">Stop in 2 min</button>
+<button type="button" style="flex-shrink: 0; height: 38px; padding: 0 12px; border-radius: 999px; background: #14141C; border: 1px solid #2F2F4A; color: #F3F3F8; font-size: 13px">Final stretch</button>
+<button type="button" style="flex-shrink: 0; height: 38px; padding: 0 12px; border-radius: 999px; background: #14141C; border: 1px solid #2F2F4A; color: #F3F3F8; font-size: 13px">Thank you</button>
+</div>
+<div style="display: flex; gap: 8px">
+<label for="say" style="position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%)">Announcement to every car</label>
+<input id="say" type="text" placeholder="Say something to every car…" style="flex: 1; min-width: 0; height: 50px; box-sizing: border-box; padding: 0 14px; background: #14141C; border: 1px solid #23233A; border-radius: 15px; color: #F3F3F8; font-size: 15px">
+<button type="button" aria-label="Speak an announcement" style="width: 50px; height: 50px; border-radius: 15px; background: #1C1C27; border: 1px solid #2F2F4A; color: #F3F3F8; display: flex; align-items: center; justify-content: center; padding: 0"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="3" width="6" height="11" rx="3"></rect><path d="M5 11a7 7 0 0 0 14 0"></path><path d="M12 18v3"></path></svg></button>
+<button type="button" aria-label="Send announcement" style="width: 50px; height: 50px; border-radius: 15px; background: #5EF2B5; border: 0; color: #04150E; display: flex; align-items: center; justify-content: center; padding: 0"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12l16-8-6 16-2-7-8-1z"></path></svg></button>
+</div>
+</div>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+renderVals() {
+return {};
+}
+}
+</script>
+</body>
+</html>

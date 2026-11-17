@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Parade complete</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&amp;family=Geist+Mono:wght@500;600&amp;display=swap">
+<style>
+body{margin:0;background:#0B0B10}
+button,a{transition:transform 160ms cubic-bezier(0.23,1,0.32,1)}
+button{font:inherit;cursor:pointer}
+button:active,a:active{transform:scale(0.97)}
+a{color:#6FF5BE}a:hover{color:#A6FAD6}
+</style>
+</helmet>
+<div style="width: 390px; height: 844px; box-sizing: border-box; padding: 56px 20px 28px; display: flex; flex-direction: column; gap: 22px; background: #0B0B10; font-family: 'Geist', system-ui, sans-serif; color: #F3F3F8; overflow: hidden">
+
+<div style="display: flex; flex-direction: column; gap: 14px">
+<span style="width: 56px; height: 56px; border-radius: 18px; background: #5EF2B5; display: flex; align-items: center; justify-content: center">
+<svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#04150E" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg>
+</span>
+<h1 style="margin: 0; font-size: 34px; font-weight: 700; letter-spacing: -0.03em; line-height: 1.05">Parade complete</h1>
+<span style="font-size: 15px; color: #A7A7BC; line-height: 1.45">Location sharing is off and the music has stopped. Drive home safely.</span>
+</div>
+
+<div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px">
+<div style="padding: 16px; border-radius: 18px; background: #14141C; border: 1px solid #23233A; display: flex; flex-direction: column; gap: 2px">
+<span style="font-family: 'Geist Mono', ui-monospace, monospace; font-size: 30px; font-weight: 600; letter-spacing: -0.03em">87</span>
+<span style="font-size: 13px; color: #A7A7BC">cars</span>
+</div>
+<div style="padding: 16px; border-radius: 18px; background: #14141C; border: 1px solid #23233A; display: flex; flex-direction: column; gap: 2px">
+<span style="font-family: 'Geist Mono', ui-monospace, monospace; font-size: 30px; font-weight: 600; letter-spacing: -0.03em">6.5 km</span>
+<span style="font-size: 13px; color: #A7A7BC">driven together</span>
+</div>
+<div style="padding: 16px; border-radius: 18px; background: #14141C; border: 1px solid #23233A; display: flex; flex-direction: column; gap: 2px">
+<span style="font-family: 'Geist Mono', ui-monospace, monospace; font-size: 30px; font-weight: 600; letter-spacing: -0.03em">58 min</span>
+<span style="font-size: 13px; color: #A7A7BC">on the road</span>
+</div>
+<div style="padding: 16px; border-radius: 18px; background: #14141C; border: 1px solid #23233A; display: flex; flex-direction: column; gap: 2px">
+<span style="font-family: 'Geist Mono', ui-monospace, monospace; font-size: 30px; font-weight: 600; letter-spacing: -0.03em">11</span>
+<span style="font-size: 13px; color: #A7A7BC">songs in sync</span>
+</div>
+</div>
+
+<div style="padding: 16px; border-radius: 20px; background: #1A1736; border: 1px solid #3A3275; display: flex; flex-direction: column; gap: 8px">
+<span style="display: flex; align-items: center; gap: 8px; font-size: 13px; color: #C8C2FF">
+<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#B0A6FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10v4h3l9 5V5L7 10H4z"></path></svg>
+From the organiser</span>
+<p style="margin: 0; font-size: 18px; font-weight: 500; line-height: 1.4">Thank you for lighting up the streets tonight. Chag sameach!</p>
+</div>
+
+<div style="flex: 1"></div>
+
+<div style="display: flex; flex-direction: column; gap: 8px">
+<button type="button" style="height: 56px; display: flex; align-items: center; justify-content: center; border-radius: 18px; background: #1C1C27; border: 1px solid #2F2F4A; color: #F3F3F8; font-size: 16px; font-weight: 500">Tell me about the next one</button>
+<span style="text-align: center; font-size: 13px; color: #8C8CA4">The music on your phone is deleted now.</span>
+</div>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+renderVals() {
+return {};
+}
+}
+</script>
+</body>
+</html>
